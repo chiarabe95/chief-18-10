@@ -518,3 +518,238 @@ text-align: center;
   text-decoration: none;
   color: var(--testo_bianco);
 }
+
+/*PAGINA CHI SIAMO*/
+#cs-slider{
+  height: fit-content;
+  background-image: url(/cs-image/javier-allegue-barros-i5Kx0P8A0d4-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+.cs-slider-img{
+  background-color: rgba(43, 117, 181, 0.8);
+  padding: 2rem 20% 2rem 0;
+  border-radius: 0 70px 70px 0;
+}
+#cs-slider h2{
+  color: #ffffff;
+  font-size: 5rem;
+  margin-left: 8rem;
+}
+.cs-mission{
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  height: max-content;
+}
+.cs-mission img{
+  height: 35rem;
+}
+.cs-mission h3, .mission h3{
+  display: none;
+}
+.cs-mission-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: end;
+}
+.cs-mission-right img{
+  height: 300px;
+  padding-top: 5rem;
+}
+#cs-fascia-consiglio{
+  height: fit-content;
+  background-color: #d2f2ff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+#cs-fascia-consiglio h3{
+  color: #2B75B5;
+  padding: 2rem 5% 2rem 0;
+  font-size: 4rem;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px 0 rgba(255, 255, 255);
+  border-radius: 0 70px 70px 0;
+  padding-left: 8rem;
+}
+
+#cs-fascia-consiglio article{
+  padding-top: 2rem;
+  padding-left: 8rem;
+}
+
+#cs-organigramma{
+  display: flex;
+  flex-basis: 70%;
+  flex-direction: row;
+  margin-top: 2rem;
+  padding-left: 8rem;
+}
+#cs-organigramma article{
+  padding-left: 2rem;
+}
+#cs-organigramma p{
+  padding-top: 1rem;
+  font-style: italic;
+  line-height: 1.5rem;
+}
+#cs-organigramma h4{
+  color:#0977d4;
+  font-size: 1.5rem;
+}
+#cs-organigramma img, #cs-consiglio img{
+  border-radius: 50%;
+  max-width:250px;
+  max-height: 250px;
+  padding-bottom: 1rem;
+}
+#cs-consiglio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rem;
+}
+#cs-consiglio>div{
+  padding: 1rem 3rem;
+  text-align: center;
+}
+#cs-consiglio p{
+  font-weight: bold;
+  font-size: larger;
+}
+
+#cs-partners{
+  background-color: #9fd4f1;
+  height: fit-content;
+}
+#cs-partners-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#cs-partners h3{
+  color: #2B75B5;
+  padding: 2rem 5% 2rem 0;
+  font-size: 4rem;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px 0 rgba(255, 255, 255);
+  border-radius: 0 70px 70px 0;
+  padding-left: 8rem;
+}
+#cs-partners p{
+  margin: 8rem;
+}
+#cs-partners span{
+  line-height: 5rem;
+  font-weight: bolder;
+}
+#flex-partners{
+display: flex;
+flex-direction: row;
+align-items: baseline;
+justify-content: center;
+margin: 0 3rem;
+padding-bottom: 5rem;
+}
+#partners{
+  display: flex;
+  flex-direction: column;
+  color: #1F538F
+}
+#partners p{
+  margin: 1rem;
+  text-align: center;
+}
+#partners h4{
+  text-align: center;
+}
+#partners img{
+  max-width: 20rem;
+  align-self: center;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 767px){
+  #cs-slider{
+    padding-top: 15rem;
+    display: flex;
+  }
+  #cs-slider h2{
+    color: #ffffff;
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+  .fascia-a{
+    max-width: 767px;
+  }
+  .cs-mission, .mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .cs-mission img{
+    display: none;
+  }
+  .cs-mission h3, .mission h3{
+    display: inline;
+    font-size: 5rem;
+    color: #1F538F;
+  }
+  .descrizioni p{
+    padding: 2rem;
+  }
+  #cs-fascia-consiglio h3, #cs-partners h3{
+    font-size: 3rem;
+    padding: 2rem 1% 2rem 2rem;
+  }
+  #cs-fascia-consiglio article {
+    padding: 2rem;
+    text-align: center;
+  }
+  #cs-organigramma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #cs-consiglio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  #cs-consiglio>div {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #cs-partners{
+    padding-top: 2rem;
+  }
+  #cs-partners-title{
+    display: inline;
+    padding-top: 2rem;
+  }
+  #cs-partners p {
+    margin: 2rem;
+    text-align: center;
+  }
+  #flex-partners{
+    flex-direction: column;
+  }
+}
